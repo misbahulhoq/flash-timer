@@ -1,0 +1,82 @@
+/* Basic styles for the page */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* Class to turn the screen white */
+body.light-on {
+  background-color: #f8f8f8; /* Bright white for flashlight effect */
+  color: #333; /* Dark text when screen is bright */
+}
+
+/* Main container for UI elements */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Shared styles for control containers */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style for the dropdown menu and its label */
+label {
+  font-size: 1.2rem;
+}
+
+select {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #555;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+/* Style for the buttons */
+button {
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#turn-on-btn {
+  background-color: #2ecc71; /* Green */
+}
+#turn-on-btn:hover {
+  background-color: #27ae60;
+}
+
+#turn-off-btn {
+  background-color: #e74c3c; /* Red */
+}
+#turn-off-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Style for the status message */
+#status-message {
+  font-size: 1.5rem;
+  height: 2.5rem; /* Reserve space to prevent layout shift */
+}
+
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}

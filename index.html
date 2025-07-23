@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Flashlight</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="off-state-controls" class="controls">
+        <label for="duration-select">Turn On Flashlight for</label>
+        <select id="duration-select">
+          <option value="15">15 seconds</option>
+          <option value="30" selected>30 seconds</option>
+          <option value="60">1 minute</option>
+          <option value="Infinity">Infinite</option>
+        </select>
+        <button id="turn-on-btn">Turn On</button>
+      </div>
+
+      <div id="on-state-controls" class="controls hidden">
+        <p id="status-message"></p>
+        <button id="turn-off-btn">Turn Off</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
